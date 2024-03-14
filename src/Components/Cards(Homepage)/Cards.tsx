@@ -19,7 +19,7 @@ export default function Card (props:any){
             />
             <div className="card--stats">
                 <img src="../../../public/Assests/star.png" className="card--star"/>
-                <span>{props.stats.rating}</span>
+                <span className='rating'>{props.stats.rating}</span>
                 <span className="gray">({props.stats.reviewCount}) • </span>
                 <span className="gray">{props.location}</span>
             </div>
