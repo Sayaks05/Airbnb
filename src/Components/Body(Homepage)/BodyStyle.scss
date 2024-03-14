@@ -14,5 +14,16 @@
     align-items: center;
     justify-content: center;
     border: 3px solid #fabfbf;
-
+    flex-wrap: wrap;
+}
+.hero--header{
+    font: bold;
+    font-weight: 80;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hero--text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    color: rgb(30, 6, 66);
 }

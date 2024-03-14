@@ -3,15 +3,25 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import { Body } from './Components/Body(Homepage)/Body'
+import Card from './Components/Cards(Homepage)/Cards'
 import { Header } from './Components/Header(Homepage)/Header'
+import { data } from './assets/Data/data'
 
 function App() {
-  //const [count, setCount] = useState(0)
+  const cards = data.map(item => {
+    return (
+        <Card
+            key={item.id}
+            {...item}
+        />
+    )
+})  
 
   return (
     <div>
     <Header/>
     <Body/>
+    <section className='newSec'>{cards}</section>
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

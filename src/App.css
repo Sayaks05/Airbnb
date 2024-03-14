@@ -47,3 +47,13 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+section {
+  padding: 20px;
+}
+.newSec {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow-x: auto;
+  background-color: rgb(240, 235, 235);
+}
